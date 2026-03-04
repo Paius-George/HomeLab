@@ -24,7 +24,8 @@ Nu am avut nevoie de un rack întreg de servere. Totul rulează pe un laptop Asu
 
 Fiecare serviciu are rolul lui bine stabilit. Am ales să combin **Mașini Virtuale (VM)** pentru izolare maximă și **Containere (LXC)** pentru viteză și consum redus de resurse.
 
-![[Pasted image 20260304203415.png]]
+<img width="2870" height="1044" alt="image" src="https://github.com/user-attachments/assets/2ddab235-2501-4eff-b2b4-96a3b7095017" />
+
 
 ---
 ### 🧠 1. Local LLM (VM 117)
@@ -32,18 +33,19 @@ Fiecare serviciu are rolul lui bine stabilit. Am ales să combin **Mașini Virtu
 Aici se întâmplă partea mea favorită. Este o mașină virtuală dedicată pentru un **LLM local**, rulat prin `llama-cpp`
 
 ---
-![[Pasted image 20260304204022.png]]
+<img width="2874" height="1036" alt="image" src="https://github.com/user-attachments/assets/2a039612-b86d-4cbf-8b6c-15bc39353159" />
 
 - **De ce VM?** Pentru că LLM-ul are nevoie de resurse „rezervate” și de o izolare mai bună la nivel de kernel.
 - **Setup-ul:** Am alocat **10GB de RAM**  pentru a putea încărca modele de limbaj decente.
 - **Performanță:** Folosesc versiuni GGUF ale modelelor pentru a scoate maximum de viteză din procesorul i7, fără să am nevoie de o placă video dedicată.
 ---
-![[Pasted image 20260304204159.png]]
+<img width="2880" height="1552" alt="image" src="https://github.com/user-attachments/assets/4e918833-c6ed-4e18-83b5-ec4e6b29d6d3" />
 
 Folosesc un model **Qwen3 de 4 miliarde de parametri**, special antrenat pentru "Reasoning" (gândire logică complexă), care a fost distilat pentru a oferi performanțe similare modelelor mult mai mari. Este în format **GGUF cu cuantizare Q4_K_M**, astfel modelul are o dimensiune redusă de doar **2.32 GB**, ceea ce îi permite să ruleze extrem de rapid pe procesorul i7, lăsând destulă memorie RAM liberă și pentru celelalte servicii de pe server.
 
 ---
-![[llm.gif]]
+![llm](https://github.com/user-attachments/assets/5e444ce4-d9c1-406a-bbf3-035a79a4a0cb)
+
 ### ⚡ Viteza de răspuns:
 
 Să rulezi un model de AI pe un procesor de laptop (fără placă video dedicată) poate suna lent, dar optimizarea prin **GGUF** și cuantizarea **Q4_K_M** fac minuni. Pe setup-ul meu, vitezele de generare sunt surprinzător de utilizabile:
@@ -59,7 +61,7 @@ L-am instalat într-un container LXC pentru că este incredibil de eficient: por
 
 ---
 
-![[Pasted image 20260304230624.png]]
+<img width="2880" height="960" alt="image" src="https://github.com/user-attachments/assets/68ce9697-a7c8-4f70-baa3-37b9b5ec6457" />
 ### ⚙️ Specificații Container (LXC)
 
 - **Resurse:** 2 vCPU | 2 GB RAM - poate părea puțin, dar chiar sunt arhisuficiente (probabil s-ar descurca la fel de bine si cu 1 vCPU si 1 GB RAM).
@@ -79,7 +81,7 @@ Este alternativa mea open-source la Netflix. Am control total asupra librăriei 
 
 ---
 
-![[Pasted image 20260304232901.png]]
+<img width="2874" height="924" alt="image" src="https://github.com/user-attachments/assets/37d38051-ea58-4899-a8c9-c794618d4b85" />
 #### ⚙️ Specificații Container (LXC)
 
 - **Resurse:** 2 vCPU | 2 GB RAM — Deși pare puțin, containerul este extrem de eficient pentru streaming.
@@ -99,6 +101,6 @@ Tailscale creează o rețea VPN mesh între toate dispozitivele mele, fără să
 
 - **Remote Control:** Dacă am nevoie de LLM-ul local sau orice alt serviciu de pe server, îl pot accesa direct de pe telefon.
 
-![[WhatsApp Image 2026-03-05 at 00.13.29.jpg]]
+<img width="1170" height="1164" alt="image" src="https://github.com/user-attachments/assets/beb87fff-0ddf-4357-a63e-91bb9d8dba9b" />
 
 ---
