@@ -1,3 +1,4 @@
+# 🖥️ HomeLab
 
 Totul a început cu un **Asus VivoBook** care aduna praf de ceva timp. Deși eare un procesor capabil, era considerat "depășit" pentru workflow-ul zilnic modern. Inspirația a venit explorând comunitățile de _HomeLab_, unde am realizat că hardware-ul "vechi" este, de fapt, o resursă neexploatată care poate găzdui un întreg ecosistem de servicii și automatizări.
 
