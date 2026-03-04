@@ -4,7 +4,7 @@ Totul a început cu un **Asus VivoBook** care aduna praf de ceva timp. Deși ear
 
 Am decis să îi ofer o a doua șansă și o misiune critică: transformarea dintr-un laptop care stătea degeaba în casă într-un **Server de Virtualizare Proxmox**.
 
-----
+
 ## 🛠️ Provocarea Hardware:
 
 Cea mai mare provocare a acestui proiect a fost optimizarea resurselor. Într-o eră a serverelor cu sute de GB de RAM, acest proiect demonstrează eficiență maximă pe o configurație modestă, dar echilibrată:
