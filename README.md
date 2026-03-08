@@ -41,7 +41,7 @@ Aici se întâmplă partea mea favorită. Este o mașină virtuală dedicată pe
 
 <img width="2880" height="1552" alt="image" src="https://github.com/user-attachments/assets/4e918833-c6ed-4e18-83b5-ec4e6b29d6d3" />
 
-Folosesc un model **Qwen3 de 4 miliarde de parametri**, special antrenat pentru "Reasoning" (gândire logică complexă), care a fost distilat pentru a oferi performanțe similare modelelor mult mai mari. Este în format **GGUF cu cuantizare Q4_K_M**, astfel modelul are o dimensiune redusă de doar **2.32 GB**, ceea ce îi permite să ruleze extrem de rapid pe procesorul i7, lăsând destulă memorie RAM liberă și pentru celelalte servicii de pe server.
+Folosesc un model **Qwen3 de 4 miliarde de parametri**, special antrenat pentru "Reasoning" (gândire logică complexă), care a fost distilat pentru a oferi performanțe similare modelelor mult mai mari. Este în format **GGUF cu cuantizare Q4_K_M**, astfel modelul are o dimensiune redusă de doar **2.32 GB**, ceea ce îi permite să ruleze decent pe procesorul i7, lăsând destulă memorie RAM liberă și pentru celelalte servicii de pe server.
 
 ![llm](https://github.com/user-attachments/assets/5e444ce4-d9c1-406a-bbf3-035a79a4a0cb)
 
@@ -60,6 +60,7 @@ L-am instalat într-un container LXC pentru că este incredibil de eficient: por
 
 
 <img width="2880" height="960" alt="image" src="https://github.com/user-attachments/assets/68ce9697-a7c8-4f70-baa3-37b9b5ec6457" />
+
 ### ⚙️ Specificații Container (LXC)
 
 - **Resurse:** 2 vCPU | 2 GB RAM - poate părea puțin, dar chiar sunt arhisuficiente (probabil s-ar descurca la fel de bine si cu 1 vCPU si 1 GB RAM).
