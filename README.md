@@ -80,6 +80,7 @@ Este alternativa mea open-source la Netflix. Am control total asupra librăriei 
 
 
 <img width="2874" height="924" alt="image" src="https://github.com/user-attachments/assets/37d38051-ea58-4899-a8c9-c794618d4b85" />
+
 #### ⚙️ Specificații Container (LXC)
 
 - **Resurse:** 2 vCPU | 2 GB RAM — Deși pare puțin, containerul este extrem de eficient pentru streaming.
